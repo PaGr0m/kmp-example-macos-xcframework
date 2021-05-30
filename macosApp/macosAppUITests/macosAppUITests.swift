@@ -1,10 +1,3 @@
-//
-//  macosAppUITests.swift
-//  macosAppUITests
-//
-//  Created by user196495 on 5/26/21.
-//
-
 import XCTest
 
 class macosAppUITests: XCTestCase {

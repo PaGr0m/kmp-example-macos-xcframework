@@ -13,7 +13,8 @@
 		282CCDA3265ECB0E00763C0D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 282CCDA2265ECB0E00763C0D /* Preview Assets.xcassets */; };
 		282CCDAF265ECB0E00763C0D /* macosAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CCDAE265ECB0E00763C0D /* macosAppTests.swift */; };
 		282CCDBA265ECB0E00763C0D /* macosAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 282CCDB9265ECB0E00763C0D /* macosAppUITests.swift */; };
-		282CCDC9265ECC1100763C0D /* KotlinLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282CCDC8265ECC1100763C0D /* KotlinLibrary.xcframework */; };
+		2876ABC626630E750033C5AA /* KotlinLibrary.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 282CCDC8265ECC1100763C0D /* KotlinLibrary.xcframework */; };
+		2876ABC726630E750033C5AA /* KotlinLibrary.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 282CCDC8265ECC1100763C0D /* KotlinLibrary.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +33,20 @@
 			remoteInfo = macosApp;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2876ABC826630E750033C5AA /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				2876ABC726630E750033C5AA /* KotlinLibrary.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		282CCD98265ECB0D00763C0D /* macosApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = macosApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -55,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				282CCDC9265ECC1100763C0D /* KotlinLibrary.xcframework in Frameworks */,
+				2876ABC626630E750033C5AA /* KotlinLibrary.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +169,7 @@
 				282CCD94265ECB0D00763C0D /* Sources */,
 				282CCD95265ECB0D00763C0D /* Frameworks */,
 				282CCD96265ECB0D00763C0D /* Resources */,
+				2876ABC826630E750033C5AA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
